@@ -654,7 +654,7 @@ function keywordSort(a, b){
     var partialName = '';
     path.forEach(function(name){
       partialName += '.' + name;
-      mangled.push(KEYWORD_PRIORITY[partialName] || 5);
+      mangled.push(KEYWORD_PRIORITY[partialName] || 'Z');
       mangled.push(name);
     });
     return (doc.section + '/' + mangled.join('.')).toLowerCase();
